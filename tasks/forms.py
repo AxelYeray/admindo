@@ -8,8 +8,7 @@ class TaskForm(ModelForm):
         model = Task
         fields = ["title", "description", "important"]
         widgets = {
-            "title": forms.TextInput(
-                attrs={
+            "title": forms.TextInput(attrs={
                     "class": "form-control m-auto",
                     "placeholder": "Title of the task...",
                 }
