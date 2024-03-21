@@ -6,7 +6,6 @@ from django.db import IntegrityError
 from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 from .models import Task
-
 from .forms import TaskForm
 
 # Create your views here.
@@ -140,3 +139,19 @@ def delete_task(request, task_id):
     if request.method == "POST":
         task.delete()
         return redirect("tasks")
+    
+
+def alta(request):
+    return render(request, "altacliente.html")
+
+
+def baja(request):
+    return render(request, "bajacliente.html")
+
+
+def editar(request):
+    return render(request, "editarcliente.html")
+
+
+
+

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="mt-5">Alta Cliente</h1>
+        <form action="/guardar_cliente" method="post" class="mt-4">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos">
+            </div>
+            <div class="form-group">
+                <label for="folio">Folio:</label>
+                <input type="text" class="form-control" id="folio" name="folio">
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular:</label>
+                <input type="text" class="form-control" id="celular" name="celular">
+            </div>
+            <div class="form-group">
+                <label for="calle">Calle:</label>
+                <input type="text" class="form-control" id="calle" name="calle">
+            </div>
+            <div class="form-group">
+                <label for="colonia">Colonia:</label>
+                <input type="text" class="form-control" id="colonia" name="colonia">
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+{% endblock %}

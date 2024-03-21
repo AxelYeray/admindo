@@ -12,13 +12,13 @@
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a href="{% url 'tasks_completed' %}" class="nav-link">Buscar cliente</a>
+                    <a href="{% url 'tasks_completed' %}" class="nav-link">Buscar venta</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'tasks' %}" class="nav-link">Clientes</a>
+                    <a href="{% url 'tasks' %}" class="nav-link">ventas</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'create_task' %}" class="nav-link">Alta cliente</a>
+                    <a href="{% url 'create_task' %}" class="nav-link">Alta venta</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/logout">Logout</a>
@@ -30,6 +30,17 @@
                 <li class="nav-item">
                     <a href="/signup" class="nav-link">Register</a>
                 </li>
+                <li class="nav-item">
+                    <a href="/altacliente" class="nav-link">Alta cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/bajacliente" class="nav-link">Baja cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/editarcliente" class="nav-link">Editar Cliente</a>
+                </li>
+
+               
                 {% endif %}
             </ul>
         </div>
